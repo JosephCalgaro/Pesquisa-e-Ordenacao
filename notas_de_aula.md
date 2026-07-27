@@ -5,3 +5,4 @@
 - Explicação da forma de avaliação
 - diferença entre REST (json) x SOAP (xml)
 - Explicação dos conceitos de escalabilidade vertical e horizontal
+- Menção dos conceitos de sort com (bubble sort, insertion sort e selection sort) e complexidade (esforço computacional)
