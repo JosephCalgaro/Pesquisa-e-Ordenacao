@@ -1,108 +1,220 @@
-# 03/08
-- Padrão Arquitetural Model View Controler (MVC) é um padrão de arquitetura de software que divide um sistema em três partes: Model (modelo de dados), View (interface visual) e Controller (controle de fluxo)
-- Eficiente é quem atinge o objetivo com o mínimo de recursos (tempo, dinheiro, energia).
-- Eficaz é quem atinge o objetivo, independentemente de como.
+# Aula - 03/08
 
-- Insertion Sort
-Memória: Interna.
-Estabilidade: Estável.
-Complexidade: Melhor caso O(n); caso médio O(n²); pior caso O(n²).
-Ordenação: Adaptável, muito eficiente para listas parcialmente ordenadas.
+## Arquitetura MVC
 
-- Selection Sort
-Memória: Interna.
-Estabilidade: Não estável.
-Complexidade: Melhor, médio e pior caso O(n²).
-Ordenação: Não adaptável, desempenho independe da ordem inicial.
+O padrão arquitetural **Model-View-Controller (MVC)** divide uma aplicação em três componentes:
 
-- Bubble Sort
-Memória: Interna.
-Estabilidade: Estável.
-Complexidade: Melhor caso O(n) (versão otimizada); caso médio O(n²); pior caso O(n²).
-Ordenação: Adaptável, eficiente para listas quase ordenadas.
+- **Model (Modelo):** responsável pelos dados e regras de negócio.
+- **View (Visão):** responsável pela interface com o usuário.
+- **Controller (Controlador):** recebe as ações do usuário, processa as regras e coordena a comunicação entre Model e View.
 
-- Comb Sort
-Memória: Interna.
-Estabilidade: Não estável.
-Complexidade: Média aproximadamente O(n log n); pior caso O(n²).
-Ordenação: Pouco adaptável.
+---
 
-- Bogo Sort
-Memória: Interna.
-Estabilidade: Não estável.
-Complexidade: Média O(n × n!).
-Ordenação: Não adaptável.
+## Eficiência x Eficácia
 
-- Merge Sort
-Memória: Interna (utiliza memória auxiliar).
-Estabilidade: Estável.
-Complexidade: Melhor, médio e pior caso O(n log n).
-Ordenação: Pouco adaptável.
+### Eficiência
+- Atinge o objetivo utilizando o mínimo de recursos possíveis (tempo, dinheiro, processamento, energia etc.).
 
-- Heap Sort
-Memória: Interna.
-Estabilidade: Não estável.
-Complexidade: Melhor, médio e pior caso O(n log n).
-Ordenação: Não adaptável.
+### Eficácia
+- Atinge o objetivo, independentemente da quantidade de recursos utilizados.
 
-- Shell Sort
-Memória: Interna.
-Estabilidade: Não estável.
-Complexidade: Depende da sequência de incrementos, variando entre aproximadamente O(n log² n) e O(n²).
-Ordenação: Parcialmente adaptável.
+---
 
-- Radix Sort
-Memória: Interna.
-Estabilidade: Estável.
-Complexidade: O(d × (n + k)), onde d é o número de dígitos e k é a base.
-Ordenação: Não adaptável.
+# Algoritmos de Ordenação
 
-- Gnome Sort
-Memória: Interna.
-Estabilidade: Estável.
-Complexidade: Melhor caso O(n); caso médio O(n²); pior caso O(n²).
-Ordenação: Adaptável.
+## Insertion Sort
+- **Memória:** Interna.
+- **Estabilidade:** Estável.
+- **Complexidade:**
+  - Melhor caso: **O(n)**
+  - Caso médio: **O(n²)**
+  - Pior caso: **O(n²)**
+- **Ordenação:** Adaptável, muito eficiente para listas parcialmente ordenadas.
 
-- Counting Sort
-Memória: Interna.
-Estabilidade: Estável.
-Complexidade: O(n + k).
-Ordenação: Não adaptável.
+---
 
-- Bucket Sort
-Memória: Interna.
-Estabilidade: Geralmente estável (quando utiliza um algoritmo estável nos baldes).
-Complexidade: Média O(n + k); pior caso O(n²).
-Ordenação: Depende da distribuição dos dados.
+## Selection Sort
+- **Memória:** Interna.
+- **Estabilidade:** Não estável.
+- **Complexidade:**
+  - Melhor caso: **O(n²)**
+  - Caso médio: **O(n²)**
+  - Pior caso: **O(n²)**
+- **Ordenação:** Não adaptável.
 
-- Cocktail Sort
-Memória: Interna.
-Estabilidade: Estável.
-Complexidade: Melhor caso O(n); caso médio O(n²); pior caso O(n²).
-Ordenação: Adaptável.
+---
 
-- Timsort
-Memória: Interna.
-Estabilidade: Estável.
-Complexidade: Melhor caso O(n); caso médio O(n log n); pior caso O(n log n).
-Ordenação: Altamente adaptável, aproveita sequências já ordenadas.
+## Bubble Sort
+- **Memória:** Interna.
+- **Estabilidade:** Estável.
+- **Complexidade:**
+  - Melhor caso: **O(n)** (versão otimizada)
+  - Caso médio: **O(n²)**
+  - Pior caso: **O(n²)**
+- **Ordenação:** Adaptável, eficiente para listas quase ordenadas.
 
-- TwistSort
-Memória: Interna.
-Estabilidade: Depende da implementação.
-Complexidade: Depende da implementação.
-Ordenação: Depende da implementação.
+---
 
-- Quick Sort
-Memória: Interna.
-Estabilidade: Não estável.
-Complexidade: Melhor caso O(n log n); caso médio O(n log n); pior caso O(n²).
-Ordenação: Pouco adaptável; pode ter desempenho ruim em listas já ordenadas se o pivô for mal escolhido.
+## Comb Sort
+- **Memória:** Interna.
+- **Estabilidade:** Não estável.
+- **Complexidade:**
+  - Caso médio: **O(n log n)** (aproximadamente)
+  - Pior caso: **O(n²)**
+- **Ordenação:** Pouco adaptável.
 
+---
 
-# 27/07
-- Organização da matéria
-- Explicação da forma de avaliação
-- diferença entre REST (json) x SOAP (xml)
-- Explicação dos conceitos de escalabilidade vertical e horizontal
-- Menção dos conceitos de sort com (bubble sort, insertion sort e selection sort) e complexidade (esforço computacional)
+## Bogo Sort
+- **Memória:** Interna.
+- **Estabilidade:** Não estável.
+- **Complexidade:**
+  - Média: **O(n × n!)**
+- **Ordenação:** Não adaptável.
+
+---
+
+## Merge Sort
+- **Memória:** Interna (utiliza memória auxiliar).
+- **Estabilidade:** Estável.
+- **Complexidade:**
+  - Melhor caso: **O(n log n)**
+  - Caso médio: **O(n log n)**
+  - Pior caso: **O(n log n)**
+- **Ordenação:** Pouco adaptável.
+
+---
+
+## Heap Sort
+- **Memória:** Interna.
+- **Estabilidade:** Não estável.
+- **Complexidade:**
+  - Melhor caso: **O(n log n)**
+  - Caso médio: **O(n log n)**
+  - Pior caso: **O(n log n)**
+- **Ordenação:** Não adaptável.
+
+---
+
+## Shell Sort
+- **Memória:** Interna.
+- **Estabilidade:** Não estável.
+- **Complexidade:**
+  - Entre **O(n log² n)** e **O(n²)** (depende da sequência de incrementos).
+- **Ordenação:** Parcialmente adaptável.
+
+---
+
+## Radix Sort
+- **Memória:** Interna.
+- **Estabilidade:** Estável.
+- **Complexidade:**
+  - **O(d × (n + k))**
+- **Ordenação:** Não adaptável.
+
+> Onde:
+> - **d** = número de dígitos;
+> - **k** = base utilizada.
+
+---
+
+## Gnome Sort
+- **Memória:** Interna.
+- **Estabilidade:** Estável.
+- **Complexidade:**
+  - Melhor caso: **O(n)**
+  - Caso médio: **O(n²)**
+  - Pior caso: **O(n²)**
+- **Ordenação:** Adaptável.
+
+---
+
+## Counting Sort
+- **Memória:** Interna.
+- **Estabilidade:** Estável.
+- **Complexidade:**
+  - **O(n + k)**
+- **Ordenação:** Não adaptável.
+
+---
+
+## Bucket Sort
+- **Memória:** Interna.
+- **Estabilidade:** Geralmente estável (quando utiliza algoritmo estável nos baldes).
+- **Complexidade:**
+  - Média: **O(n + k)**
+  - Pior caso: **O(n²)**
+- **Ordenação:** Depende da distribuição dos dados.
+
+---
+
+## Cocktail Sort
+- **Memória:** Interna.
+- **Estabilidade:** Estável.
+- **Complexidade:**
+  - Melhor caso: **O(n)**
+  - Caso médio: **O(n²)**
+  - Pior caso: **O(n²)**
+- **Ordenação:** Adaptável.
+
+---
+
+## Timsort
+- **Memória:** Interna.
+- **Estabilidade:** Estável.
+- **Complexidade:**
+  - Melhor caso: **O(n)**
+  - Caso médio: **O(n log n)**
+  - Pior caso: **O(n log n)**
+- **Ordenação:** Altamente adaptável, aproveitando sequências já ordenadas.
+
+---
+
+## TwistSort
+- **Memória:** Interna.
+- **Estabilidade:** Depende da implementação.
+- **Complexidade:** Depende da implementação.
+- **Ordenação:** Depende da implementação.
+
+---
+
+## Quick Sort
+- **Memória:** Interna.
+- **Estabilidade:** Não estável.
+- **Complexidade:**
+  - Melhor caso: **O(n log n)**
+  - Caso médio: **O(n log n)**
+  - Pior caso: **O(n²)**
+- **Ordenação:** Pouco adaptável. Pode apresentar pior desempenho em listas já ordenadas quando o pivô é mal escolhido.
+
+## Aula - 27/07
+
+### Organização da disciplina
+- Organização da matéria.
+- Explicação da forma de avaliação.
+
+### Conceitos de APIs
+#### REST
+- Utiliza principalmente o formato **JSON** para troca de dados.
+- Mais leve, simples e amplamente utilizado em aplicações web.
+
+#### SOAP
+- Utiliza o formato **XML**.
+- Possui maior padronização e recursos de segurança, porém é mais complexo.
+
+### Escalabilidade
+
+#### Escalabilidade Vertical
+- Consiste em aumentar os recursos da mesma máquina (CPU, memória, armazenamento).
+
+#### Escalabilidade Horizontal
+- Consiste em adicionar novas máquinas ou servidores para distribuir a carga.
+
+### Introdução a algoritmos de ordenação
+- Apresentação dos algoritmos:
+  - Bubble Sort
+  - Insertion Sort
+  - Selection Sort
+- Introdução ao conceito de **complexidade de algoritmos** (esforço computacional).
+
+---
