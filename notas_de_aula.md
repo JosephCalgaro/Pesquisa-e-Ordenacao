@@ -1,3 +1,13 @@
+# Aula - 13/08
+
+- Metodo de ordenação coctail sort ou shake sort
+- comparação entre os diferentes tipos de sort
+
+# Aula - 10/08
+
+ - Revisão sobre os tipos de sort ja ensinados e modelo MVC
+
+
 # Aula - 03/08
 
 ## Arquitetura MVC
