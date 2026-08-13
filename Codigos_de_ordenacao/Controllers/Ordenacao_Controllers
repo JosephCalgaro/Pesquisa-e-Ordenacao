@@ -1,0 +1,110 @@
+using System.Diagnostics;
+using Projeto.Models;
+using Projeto.Views;
+
+namespace Projeto.Controllers
+{
+    public class OrdenacaoController
+    {
+        private readonly OrdenacaoView view;
+
+        public OrdenacaoController()
+        {
+            view = new OrdenacaoView();
+        }
+
+        public void Executar()
+        {
+            // AGITAÇÃO
+            ExecutarOrdenacao(
+                "Ordenação por agitação",
+                () =>
+                {
+                    OrdenacaoModel model = new OrdenacaoModel();
+                    model.Popular(100000);
+                    return model;
+                },
+                model => model.Agitacao()
+            );
+
+            // BOLHA
+            ExecutarOrdenacao(
+                "Ordenação por bolha",
+                () =>
+                {
+                    OrdenacaoModel model = new OrdenacaoModel();
+                    model.Popular(100000);
+                    return model;
+                },
+                model => model.Bolha()
+            );
+
+            // INSERÇÃO
+            ExecutarOrdenacao(
+                "Ordenação por inserção",
+                () =>
+                {
+                    OrdenacaoModel model = new OrdenacaoModel();
+                    model.Popular(100000);
+                    return model;
+                },
+                model => model.Insercao()
+            );
+
+            // SELEÇÃO
+            ExecutarOrdenacao(
+                "Ordenação por seleção",
+                () =>
+                {
+                    OrdenacaoModel model = new OrdenacaoModel();
+                    model.Popular(100000);
+                    return model;
+                },
+                model => model.Selecao()
+            );
+
+            // SORT NATIVO
+            ExecutarOrdenacao(
+                "Ordenação por Sort nativo",
+                () =>
+                {
+                    OrdenacaoModel model = new OrdenacaoModel();
+                    model.Popular(100000);
+                    return model;
+                },
+                model => model.OrdenacaoNativa()
+            );
+        }
+
+        private void ExecutarOrdenacao(
+            string nome,
+            System.Func<OrdenacaoModel> criarModel,
+            System.Action<OrdenacaoModel> ordenar)
+        {
+            OrdenacaoModel model = criarModel();
+
+            Stopwatch sw = new Stopwatch();
+
+            sw.Start();
+
+            ordenar(model);
+
+            sw.Stop();
+
+            view.ExibirTempo(sw, nome);
+
+            if (nome != "Ordenação por Sort nativo")
+            {
+                view.ExibirComparacoes(
+                    model.QuantidadeComparacoes
+                );
+
+                view.ExibirTrocas(
+                    model.QuantidadeTrocas
+                );
+            }
+
+            view.ExibirSeparador();
+        }
+    }
+}
