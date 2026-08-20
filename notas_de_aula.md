@@ -1,6 +1,11 @@
+# Aula - 20/08
+
+- Na memoria principal 0(n^2) quando n = 10, distancia = n e distancia = distancia / 1.3
+- quando distancia não for diferente de 1 e não haver troca parar o algoritmo
+
 # Aula - 13/08
 
-- Metodo de ordenação coctail sort ou shake sort
+- Apresentação do metodo de ordenação coctail sort ou shake sort
 - comparação entre os diferentes tipos de sort
 
 # Aula - 10/08

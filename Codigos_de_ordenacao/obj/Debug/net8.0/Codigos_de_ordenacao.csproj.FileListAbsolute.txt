@@ -1,0 +1,14 @@
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\bin\Debug\net8.0\Codigos_de_ordenacao.exe
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\bin\Debug\net8.0\Codigos_de_ordenacao.deps.json
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\bin\Debug\net8.0\Codigos_de_ordenacao.runtimeconfig.json
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\bin\Debug\net8.0\Codigos_de_ordenacao.dll
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\bin\Debug\net8.0\Codigos_de_ordenacao.pdb
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\Codigos_de_ordenacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\Codigos_de_ordenacao.AssemblyInfoInputs.cache
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\Codigos_de_ordenacao.AssemblyInfo.cs
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\Codigos_de_ordenacao.csproj.CoreCompileInputs.cache
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\Codigos_de_ordenacao.dll
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\refint\Codigos_de_ordenacao.dll
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\Codigos_de_ordenacao.pdb
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\Codigos_de_ordenacao.genruntimeconfig.cache
+C:\Users\laboratorio\Desktop\Pesquisa-e-Ordenacao-main\Codigos_de_ordenacao\obj\Debug\net8.0\ref\Codigos_de_ordenacao.dll

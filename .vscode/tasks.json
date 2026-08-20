@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build projeto de ordenação",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"Codigos_de_ordenacao\\Codigos_de_ordenacao.csproj",
+				"/property:GenerateFullPaths=true"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build"
+		}
+	]
+}

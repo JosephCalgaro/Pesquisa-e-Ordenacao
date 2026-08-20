@@ -1,0 +1,226 @@
+using System;
+using System.Collections.Generic;
+
+namespace Projeto.Models
+{
+    public class OrdenacaoModel
+    {
+        public List<int> Lista { get; set; }
+
+        public int QuantidadeComparacoes { get; private set; }
+        public int QuantidadeTrocas { get; private set; }
+
+        public OrdenacaoModel()
+        {
+            Lista = new List<int>();
+        }
+
+        public void Popular(int quantidade)
+        {
+            Random gerador = new Random();
+
+            for (int i = 0; i < quantidade; i++)
+            {
+                Lista.Add(gerador.Next(100000));
+            }
+        }
+
+        // ==========================================
+        // ORDENAÇÃO POR AGITAÇÃO
+        // ==========================================
+
+        public void Agitacao()
+        {
+            bool houveTroca;
+            int tmp;
+            int ini = 0;
+            int fim = Lista.Count;
+
+            QuantidadeComparacoes = 0;
+            QuantidadeTrocas = 0;
+
+            do
+            {
+                houveTroca = false;
+
+                for (int i = ini; i < fim - 1; i++)
+                {
+                    QuantidadeComparacoes++;
+
+                    if (Lista[i] > Lista[i + 1])
+                    {
+                        QuantidadeTrocas++;
+                        houveTroca = true;
+
+                        tmp = Lista[i];
+                        Lista[i] = Lista[i + 1];
+                        Lista[i + 1] = tmp;
+                    }
+                }
+
+                if (!houveTroca)
+                    break;
+
+                fim--;
+
+                houveTroca = false;
+
+                for (int i = fim; i >= ini + 1; i--)
+                {
+                    QuantidadeComparacoes++;
+
+                    if (Lista[i] < Lista[i - 1])
+                    {
+                        QuantidadeTrocas++;
+                        houveTroca = true;
+
+                        tmp = Lista[i];
+                        Lista[i] = Lista[i - 1];
+                        Lista[i - 1] = tmp;
+                    }
+                }
+
+                ini++;
+
+            } while (houveTroca);
+        }
+
+        // ==========================================
+        // ORDENAÇÃO BOLHA
+        // ==========================================
+
+        public void Bolha()
+        {
+            int tmp;
+
+            QuantidadeComparacoes = 0;
+            QuantidadeTrocas = 0;
+
+            for (int i = 0; i < Lista.Count - 1; i++)
+            {
+                bool houveTroca = false;
+
+                for (int j = 0; j < Lista.Count - 1 - i; j++)
+                {
+                    QuantidadeComparacoes++;
+
+                    if (Lista[j] > Lista[j + 1])
+                    {
+                        QuantidadeTrocas++;
+                        houveTroca = true;
+
+                        tmp = Lista[j];
+                        Lista[j] = Lista[j + 1];
+                        Lista[j + 1] = tmp;
+                    }
+                }
+
+                if (!houveTroca)
+                    break;
+            }
+        }
+
+        // ==========================================
+        // ORDENAÇÃO POR INSERÇÃO
+        // ==========================================
+
+        public void Insercao()
+        {
+            QuantidadeComparacoes = 0;
+            QuantidadeTrocas = 0;
+
+            for (int i = 1; i < Lista.Count; i++)
+            {
+                int chave = Lista[i];
+                int j = i - 1;
+
+                while (j >= 0)
+                {
+                    QuantidadeComparacoes++;
+
+                    if (Lista[j] > chave)
+                    {
+                        Lista[j + 1] = Lista[j];
+                        QuantidadeTrocas++;
+                        j--;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                Lista[j + 1] = chave;
+            }
+        }
+
+        // ==========================================
+        // ORDENAÇÃO POR SELEÇÃO
+        // ==========================================
+
+        public void Selecao()
+        {
+            QuantidadeComparacoes = 0;
+            QuantidadeTrocas = 0;
+
+            for (int i = 0; i < Lista.Count - 1; i++)
+            {
+                int menor = i;
+
+                for (int j = i + 1; j < Lista.Count; j++)
+                {
+                    QuantidadeComparacoes++;
+
+                    if (Lista[j] < Lista[menor])
+                    {
+                        menor = j;
+                    }
+                }
+
+                if (menor != i)
+                {
+                    int tmp = Lista[i];
+                    Lista[i] = Lista[menor];
+                    Lista[menor] = tmp;
+
+                    QuantidadeTrocas++;
+                }
+            }
+        }
+
+        // ==========================================
+        // SORT NATIVO
+        // ==========================================
+
+        public void OrdenacaoNativa()
+        {
+            Lista.Sort();
+        }
+
+        // ==========================================
+        // MÉTODO PENTE
+        // ==========================================
+
+        public void Pente()
+        {
+            int i, tmp, dist = Lista.Count;
+            bool houveTroca;
+
+            do{
+                dist = (int)(dist / 1.3);
+                if(dist < 1) dist = 1;
+                houveTroca = false;
+                for(i = 0; i + dist < Lista.Count; i++){
+                    QuantidadeComparacoes++;
+                    if(Lista[i] > Lista[i + dist]){
+                        tmp = Lista[i];
+                        Lista[i] = Lista[i + dist];
+                        Lista[i + dist] = tmp;
+                        houveTroca = true;
+                        QuantidadeTrocas++;
+                    }
+                }
+            }while(dist != 1 || houveTroca);
+        }
+    }
+}

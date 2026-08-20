@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+
+namespace Projeto.Views
+{
+    public class OrdenacaoView
+    {
+        public void Exibir(List<int> lista)
+        {
+            foreach (var item in lista)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public void ExibirTempo(Stopwatch stopwatch, string frase)
+        {
+            Console.WriteLine(
+                frase + " (ms): " +
+                stopwatch.ElapsedMilliseconds
+            );
+        }
+
+        public void ExibirComparacoes(int quantidade)
+        {
+            Console.WriteLine(
+                "Comparações: " + quantidade
+            );
+        }
+
+        public void ExibirTrocas(int quantidade)
+        {
+            Console.WriteLine(
+                "Trocas: " + quantidade
+            );
+        }
+
+        public void ExibirSeparador()
+        {
+            Console.WriteLine("----------------------------------");
+        }
+    }
+}
