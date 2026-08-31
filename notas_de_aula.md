@@ -1,3 +1,7 @@
+# Aula - 31/08
+
+- Metodos instaveis geralmente possuem gap/distancia
+
 # Aula - 20/08
 
 - Na memoria principal 0(n^2) quando n = 10, distancia = n e distancia = distancia / 1.3
