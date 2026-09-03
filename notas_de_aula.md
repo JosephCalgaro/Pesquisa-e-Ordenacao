@@ -1,7 +1,7 @@
 # Aula - 03/09
 
 - Metodos de baixa complexidade são geralmente mas "dificeis" de implementar
-- **Merge sort**:
+- **Merge sort:**
    - Divide o vetor ao meio repetidamente até que cada parte tenha apenas um elemento.
    - Compara os elementos das partes divididas.
    - Intercala (merge) as partes, colocando os elementos em ordem.
@@ -21,8 +21,25 @@
 
 [1, 2, 5, 8]
 
-- **Quick Sort:**
-  - 
+Quick Sort:
+
+Escolhe um elemento como pivô.
+Divide o vetor em duas partes: elementos menores que o pivô e elementos maiores.
+Aplica o mesmo processo recursivamente em cada parte.
+Ao final, as partes já estarão ordenadas.
+
+Exemplo:
+
+[5, 2, 8, 1]
+      ↓ escolhe o pivô (5)
+
+[2, 1]  [5]  [8]
+      ↓ aplica novamente
+
+[1, 2]  [5]  [8]
+      ↓ resultado
+
+[1, 2, 5, 8]
 
 
 # Aula - 31/08
