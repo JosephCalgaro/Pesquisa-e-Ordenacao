@@ -1,3 +1,26 @@
+# Aula - 03/09
+
+- Metodos de baixa complexidade são geralmente mas "dificeis" de implementar
+- **Merge sort**:
+   - Divide o vetor ao meio repetidamente até que cada parte tenha apenas um elemento.
+   - Compara os elementos das partes divididas.
+   - Intercala (merge) as partes, colocando os elementos em ordem.
+   - Repete o processo até formar o vetor completo ordenado.
+[5, 2, 8, 1]
+      ↓ divide
+
+[5, 2]    [8, 1]
+      ↓ divide
+
+[5] [2]    [8] [1]
+      ↓ intercala
+
+[2, 5]    [1, 8]
+      ↓ intercala
+
+[1, 2, 5, 8]
+
+
 # Aula - 31/08
 
 - Metodos instaveis geralmente possuem gap/distancia
