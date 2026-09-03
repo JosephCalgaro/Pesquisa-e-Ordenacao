@@ -6,6 +6,7 @@
    - Compara os elementos das partes divididas.
    - Intercala (merge) as partes, colocando os elementos em ordem.
    - Repete o processo até formar o vetor completo ordenado.
+   - Considerado "rapido" pois posssui processamento em partes
 [5, 2, 8, 1]
       ↓ divide
 
@@ -19,6 +20,9 @@
       ↓ intercala
 
 [1, 2, 5, 8]
+
+- **Quick Sort:**
+  - 
 
 
 # Aula - 31/08
