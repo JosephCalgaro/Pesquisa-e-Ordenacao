@@ -21,14 +21,12 @@
 
 [1, 2, 5, 8]
 
-Quick Sort:
+- **Quick Sort:**
 
-Escolhe um elemento como pivô.
-Divide o vetor em duas partes: elementos menores que o pivô e elementos maiores.
-Aplica o mesmo processo recursivamente em cada parte.
-Ao final, as partes já estarão ordenadas.
-
-Exemplo:
+   - Escolhe um elemento como pivô.
+   - Divide o vetor em duas partes: elementos menores que o pivô e elementos maiores.
+   - Aplica o mesmo processo recursivamente em cada parte.
+   - Ao final, as partes já estarão ordenadas.
 
 [5, 2, 8, 1]
       ↓ escolhe o pivô (5)
