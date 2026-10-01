@@ -1,3 +1,33 @@
+# Aula - 01/10
+- Pesquisa sequencial -> não ordenada
+- Pesquisa Binaria -> ordenada
+- Exemplo pesquisa binaria:
+```java
+    public static boolean pesquisaBinaria(int numero, ArrayList<Integer> lista) {
+        int ini = 0;
+        int fim = lista.size()-1;
+        int meio;
+        long qtdComparacoes = 0;
+        do {
+            meio = (int)(ini+fim)/2;
+
+            qtdComparacoes++;
+            if (numero == lista.get(meio)) {
+                return true;
+            }
+            if (numero < lista.get(meio)) {
+                fim = meio - 1;                
+            } else {
+                ini = meio + 1;
+            }
+        } while (ini <= fim);
+        System.out.println("Qauntidade de comparaçoes: " + qtdComparacoes);
+
+        return false;
+    }
+
+```
+
 # Aula - 03/09
 
 - Metodos de baixa complexidade são geralmente mas "dificeis" de implementar
