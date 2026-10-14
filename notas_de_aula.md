@@ -1,3 +1,24 @@
+#Aula - 14/10
+
+- universo de ordenação:
+      - algoritmos
+      - conceitos
+- universo de pesquisa:
+      - conceitos
+      - algoritmos:
+          - sequencial
+          - binario
+          - digital
+- HASH:
+      - função de espalhamentos, ou seja, um dado é armazenado ou pesquisado na estrutura via um código de endereçamento
+      - conceitos:
+          - tabela hash: estrutura de dados que armazena os dados
+          - função hash: cálculo de endereçamento para armazenar e buscar elementos na estrutura
+          - tipos de tratamento de colisões:
+              - listas encadeadas
+              - open addressing ou closed hashing 
+
+
 # Aula - 01/10
 - Pesquisa sequencial -> não ordenada
 - Pesquisa Binaria -> ordenada
