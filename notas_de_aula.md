@@ -1,15 +1,15 @@
 #Aula - 14/10
 
-- universo de ordenação:
+- **universo de ordenação:**
       - algoritmos
       - conceitos
-- universo de pesquisa:
+- **universo de pesquisa:**
       - conceitos
       - algoritmos:
           - sequencial
           - binario
           - digital
-- HASH:
+- **HASH:**
       - função de espalhamentos, ou seja, um dado é armazenado ou pesquisado na estrutura via um código de endereçamento
       - conceitos:
           - tabela hash: estrutura de dados que armazena os dados
