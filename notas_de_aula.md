@@ -33,9 +33,9 @@
     public int hashCode() {
         return Objects.hashCode(matricula);
     }
-}
+  }
 
-public class ExemploHashObjetos {
+  public class ExemploHashObjetos {
     public static void main(String[] args) {
         HashSet<Aluno> tabelaHashAluno = new HashSet<>();
 
@@ -48,9 +48,8 @@ public class ExemploHashObjetos {
             System.out.println(a);
         }
     }
-}
-
-  ```
+  }
+   ```
 - tabelas hash não possuem indice, entao for com iteração i não funcionam
 - Exemplo tabelas hash
   ```java
