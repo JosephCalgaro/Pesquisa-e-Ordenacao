@@ -1,3 +1,7 @@
+#Aula - 19/10
+
+- Exemplo de hash feito a mão utilizando tabela de listas
+
 #Aula - 14/10
 
 - Exemplo de tratamento de objetos e classes em java utilizando hash:
