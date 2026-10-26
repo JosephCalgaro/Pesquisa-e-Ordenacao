@@ -1,3 +1,9 @@
+#Aula - 26/10
+
+- **Pesquisa Digital:**
+    - A **Trie** é uma estrutura de árvore na qual cada caminho representa uma sequência de caracteres. Palavras que possuem o mesmo prefixo compartilham os nós iniciais.
+    - A **Patricia** é uma estrutura derivada da Trie que comprime caminhos desnecessariamente longos. Em vez de armazenar um nó para cada caractere de uma sequência sem ramificações, ela pode armazenar vários caracteres em uma única aresta. 
+
 #Aula - 19/10
 
 - Exemplo de hash feito a mão utilizando tabela de listas
