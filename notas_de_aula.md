@@ -1,3 +1,12 @@
+#Aula - 09/11
+
+- **Tecnica de balanceamento de Arvores:**
+      - AVL: A árvore AVL é uma árvore binária de busca que mantém seu balanceamento automaticamente após operações de inserção e remoção.
+              Ela utiliza o fator de balanceamento, calculado pela diferença entre as alturas das subárvores esquerda e direita.
+              O fator deve ser -1, 0 ou +1, caso limite ultrapassado o balanceamento é realizado.
+              ![Arvore AVL](https://pt.wikipedia.org/wiki/%C3%81rvore_AVL)
+      - DSW
+
 #Aula - 26/10
 
 - **Pesquisa Digital:**
